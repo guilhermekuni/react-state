@@ -11,7 +11,12 @@ export default createGlobalStyle`
   body {
     background: #1B1F3B;
     color: #FFF;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   body, input, button {
@@ -20,5 +25,7 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+    background: transparent;
+    color: #FFF;
   }
 `;
