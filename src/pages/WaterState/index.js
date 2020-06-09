@@ -28,7 +28,7 @@ const WATER_STATES_LABELS = {
 
 const WaterState = () => {
   const [waterState, setWaterState] = useState('gas');
-  const [temperature, setTemperature] = useState(150);
+  const [temperature, setTemperature] = useState(99);
 
   useEffect(() => {
     const { GAS, LIQUID, SOLID } = WATER_STATES;
