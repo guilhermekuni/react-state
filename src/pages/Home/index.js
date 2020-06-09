@@ -7,19 +7,13 @@ const Home = () => {
   return (
     <S.Wrapper>
       <S.LinkButton>
-        <Link to="/water-state">
-          ESTADO DA ÁGUA
-        </Link>
+        <Link to="/water-state">ESTADO DA ÁGUA</Link>
       </S.LinkButton>
       <S.LinkButton>
-        <Link to="/water-state">
-          ESTADO DA ÁGUA
-        </Link>
+        <Link to="/counter">CONTADOR</Link>
       </S.LinkButton>
       <S.LinkButton>
-        <Link to="/water-state">
-          ESTADO DA ÁGUA
-        </Link>
+        <Link to="/form">FORMULÁRIO</Link>
       </S.LinkButton>
     </S.Wrapper>
   );

@@ -53,29 +53,27 @@ const WaterState = () => {
     [waterState]);
 
   return (
-    <>
-      <S.Wrapper>
-        <Header />
-        <S.WaterStateWrapper>
-          <h2>Estado: {waterStateName}</h2>
-          <img alt="Water State" src={waterStateImage} />
-          <div className='slider orientation-reversed'>
-            <div className='slider-group'>
-              <div className='slider-vertical'>
-                <Slider
-                  min={-100}
-                  max={200}
-                  value={temperature}
-                  orientation='vertical'
-                  onChange={setTemperature}
-                />
-                <div className='value'>{temperature}°</div>
-              </div>
+    <S.Wrapper>
+      <Header />
+      <S.WaterStateWrapper>
+        <h2>Estado: {waterStateName}</h2>
+        <img alt="Water State" src={waterStateImage} />
+        <div className='slider orientation-reversed'>
+          <div className='slider-group'>
+            <div className='slider-vertical'>
+              <Slider
+                min={-100}
+                max={200}
+                value={temperature}
+                orientation='vertical'
+                onChange={setTemperature}
+              />
+              <div className='value'>{temperature}°</div>
             </div>
           </div>
-        </S.WaterStateWrapper>
-      </S.Wrapper>
-    </>
+        </div>
+      </S.WaterStateWrapper>
+    </S.Wrapper>
   );
 };
 
