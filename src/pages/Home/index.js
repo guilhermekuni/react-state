@@ -11,8 +11,16 @@ const Home = () => {
           ESTADO DA ÁGUA
         </Link>
       </S.LinkButton>
-      <S.LinkButton>TESTE 2</S.LinkButton>
-      <S.LinkButton>TESTE 3</S.LinkButton>
+      <S.LinkButton>
+        <Link to="/water-state">
+          ESTADO DA ÁGUA
+        </Link>
+      </S.LinkButton>
+      <S.LinkButton>
+        <Link to="/water-state">
+          ESTADO DA ÁGUA
+        </Link>
+      </S.LinkButton>
     </S.Wrapper>
   );
 };

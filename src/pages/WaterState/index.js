@@ -6,6 +6,8 @@ import waterGas from '../../assets/images/water-gas.png';
 import waterLiquid from '../../assets/images/water-liquid.png';
 import waterSolid from '../../assets/images/water-solid.png';
 
+import Header from '../../components/Header';
+
 import * as S from './styles';
 
 const WATER_STATES = {
@@ -51,26 +53,29 @@ const WaterState = () => {
     [waterState]);
 
   return (
-    <S.Wrapper>
-      <S.WaterStateWrapper>
-        <h2>Estado: {waterStateName}</h2>
-        <img alt="Water State" src={waterStateImage} />
-        <div className='slider orientation-reversed'>
-          <div className='slider-group'>
-            <div className='slider-vertical'>
-              <Slider
-                min={-100}
-                max={200}
-                value={temperature}
-                orientation='vertical'
-                onChange={setTemperature}
-              />
-              <div className='value'>{temperature}°</div>
+    <>
+      <S.Wrapper>
+        <Header />
+        <S.WaterStateWrapper>
+          <h2>Estado: {waterStateName}</h2>
+          <img alt="Water State" src={waterStateImage} />
+          <div className='slider orientation-reversed'>
+            <div className='slider-group'>
+              <div className='slider-vertical'>
+                <Slider
+                  min={-100}
+                  max={200}
+                  value={temperature}
+                  orientation='vertical'
+                  onChange={setTemperature}
+                />
+                <div className='value'>{temperature}°</div>
+              </div>
             </div>
           </div>
-        </div>
-      </S.WaterStateWrapper>
-    </S.Wrapper>
+        </S.WaterStateWrapper>
+      </S.Wrapper>
+    </>
   );
 };
 
