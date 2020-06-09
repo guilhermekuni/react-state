@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  height: 400px;
-  width: 400px;
+  height: 1200px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,4 +25,12 @@ export const Wrapper = styled.div`
       border: 12px solid #fff;
     }
   }
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  background: #7E7F9A;
+  height: 600px;
+  width: 80%;
 `;

@@ -8,6 +8,9 @@ const Form = () => {
   return (
     <S.Wrapper>
       <Header />
+      <S.Form>
+        
+      </S.Form>
     </S.Wrapper>
   );
 };
