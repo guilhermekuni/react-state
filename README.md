@@ -27,8 +27,8 @@ This project have some simple examples and ilustrations of React State implement
 
 ## Implemented Examples :pencil:
 
-- Counter: a simple counter component that implements `useState` hook.
-- TodoList: a simple todo list component that implements `useState` hook.
+- Temperature x Water State: a simple example that implements `useState` hook. The point is to show how external factors interferes in the state.
+- Counter: a simple example that implements `useState` hook. The point is to show the difference between a state property and a variable.
 
 ## Getting Started :rocket:
 
